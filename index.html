@@ -15,7 +15,7 @@
         <nav>
             <a href="#inicio">Início</a>
             <a href="#pilares">Pilares</a>
-            <a href="#calculadora">Simulador</a>
+            <a href="#simulador">Simulador</a>
         </nav>
     </header>
 
@@ -30,21 +30,21 @@
     <section class="container" id="pilares">
         <h2 class="section-title">Nossos Três Pilares</h2>
         <div class="grid">
-            <div class="card" onclick="mostrarDetalhes('produtividade')">
+            <div class="card" data-pilar="produtividade">
                 <div class="card-icon">🚜</div>
                 <h3>Produtividade Eficiente</h3>
                 <p>Uso de tecnologia de ponta e agricultura de precisão para produzir mais utilizando menos insumos.</p>
                 <span class="saiba-mais">Clique para saber mais →</span>
             </div>
 
-            <div class="card" onclick="mostrarDetalhes('preservacao')">
+            <div class="card" data-pilar="preservacao">
                 <div class="card-icon">🌳</div>
                 <h3>Preservação Ambiental</h3>
                 <p>Práticas focadas na rotação de culturas, plantio direto e conservação das fontes de água.</p>
                 <span class="saiba-mais">Clique para saber mais →</span>
             </div>
 
-            <div class="card" onclick="mostrarDetalhes('energia')">
+            <div class="card" data-pilar="energia">
                 <div class="card-icon">☀️</div>
                 <h3>Energia Limpa</h3>
                 <p>Incentivo ao uso de fontes renováveis no campo, como energia solar e biomassa.</p>
@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <section class="interactive-section" id="calculadora">
+    <section class="interactive-section" id="simulador">
         <div class="interactive-container">
             <h2 class="section-title">Simulador de Impacto Sustentável</h2>
             <p class="subtitle">Selecione uma prática sustentável abaixo para ver o impacto estimado na sua produção:</p>
@@ -65,7 +65,7 @@
                     <option value="direto">Adoção do Sistema de Plantio Direto</option>
                     <option value="precisao">Uso de Agricultura de Precisão (Drones/IA)</option>
                 </select>
-                <button class="btn" onclick="calcularImpacto()">Simular Impacto</button>
+                <button class="btn" id="btn-simular">Simular Impacto</button>
             </div>
 
             <div id="resultado-simulacao" class="resultado-box hidden">
