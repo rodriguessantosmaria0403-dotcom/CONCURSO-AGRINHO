@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🌱</span> AgroSustentável
+        </div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#pilares">Pilares</a>
+            <a href="#calculadora">Simulador</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Agro Forte, Futuro Sustentável</h2>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação dos nossos recursos naturais.</p>
+            <a href="#pilares" class="btn">Conhecer Práticas</a>
+        </div>
+    </section>
+
+    <section class="container" id="pilares">
+        <h2 class="section-title">Nossos Três Pilares</h2>
+        <div class="grid">
+            <div class="card" onclick="mostrarDetalhes('produtividade')">
+                <div class="card-icon">🚜</div>
+                <h3>Produtividade Eficiente</h3>
+                <p>Uso de tecnologia de ponta e agricultura de precisão para produzir mais utilizando menos insumos.</p>
+                <span class="saiba-mais">Clique para saber mais →</span>
+            </div>
+
+            <div class="card" onclick="mostrarDetalhes('preservacao')">
+                <div class="card-icon">🌳</div>
+                <h3>Preservação Ambiental</h3>
+                <p>Práticas focadas na rotação de culturas, plantio direto e conservação das fontes de água.</p>
+                <span class="saiba-mais">Clique para saber mais →</span>
+            </div>
+
+            <div class="card" onclick="mostrarDetalhes('energia')">
+                <div class="card-icon">☀️</div>
+                <h3>Energia Limpa</h3>
+                <p>Incentivo ao uso de fontes renováveis no campo, como energia solar e biomassa.</p>
+                <span class="saiba-mais">Clique para saber mais →</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-section" id="calculadora">
+        <div class="interactive-container">
+            <h2 class="section-title">Simulador de Impacto Sustentável</h2>
+            <p class="subtitle">Selecione uma prática sustentável abaixo para ver o impacto estimado na sua produção:</p>
+            
+            <div class="simulator-controls">
+                <select id="pratica-select">
+                    <option value="">-- Escolha uma prática sustentável --</option>
+                    <option value="solar">Instalação de Energia Solar no Campo</option>
+                    <option value="direto">Adoção do Sistema de Plantio Direto</option>
+                    <option value="precisao">Uso de Agricultura de Precisão (Drones/IA)</option>
+                </select>
+                <button class="btn" onclick="calcularImpacto()">Simular Impacto</button>
+            </div>
+
+            <div id="resultado-simulacao" class="resultado-box hidden">
+                <h3>Resultado Estimado</h3>
+                <p id="resultado-texto"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
+        <p>Equilíbrio entre produção e meio ambiente.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
