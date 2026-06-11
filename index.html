@@ -4,96 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Forte, Futuro Sustentável</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c5e3b;
+            --secondary: #8bc34a;
+            --dark: #212529;
+            --light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .cta-section {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #7cb342;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <div class="interface">
-            <div class="logo">
-                <h1>Agro<span>Sustentável</span></h1>
-            </div>
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#pilares">Pilares</a></li>
-                    <li><a href="#sobre">O Equilíbrio</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="btn-contato">
-                <a href="#contato"><button>Faça Parte</button></a>
-            </div>
-        </div>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
     </header>
 
-    <section class="hero" id="inicio">
-        <div class="interface">
-            <div class="txt-hero">
-                <h2>AGRO FORTE,<br>FUTURO SUSTENTÁVEL.</h2>
-                <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente. A tecnologia trabalhando lado a lado com a natureza.</p>
-                <a href="#pilares" class="btn-saiba-mais">Saiba Mais <i class="fa-solid fa-arrow-down"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="pilares" id="pilares">
-        <div class="interface">
-            <h2 class="titulo">Nossos <span>Pilares.</span></h2>
-            <div class="flex-pilares">
-                <div class="pilar-box">
-                    <i class="fa-solid fa-seedling"></i>
-                    <h3>Produção Consciente</h3>
-                    <p>Uso de técnicas como a rotação de culturas e o plantio direto, que protegem o solo e aumentam o rendimento da safra.</p>
+    <div class="container">
+        <section>
+            <h2>Pilares do Agronegócio Moderno</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Produção Eficiente</h3>
+                    <p>Uso de tecnologia de ponta, agricultura de precisão e manejo inteligente para produzir mais alimentos utilizando menos recursos naturais.</p>
                 </div>
-                <div class="pilar-box">
-                    <i class="fa-solid fa-droplet"></i>
-                    <h3>Gestão de Recursos</h3>
-                    <p>Sistemas inteligentes de irrigação gota a gota e captação de água da chuva para reduzir o desperdício ao mínimo.</p>
+                <div class="card">
+                    <h3>Preservação Ambiental</h3>
+                    <p>Práticas de conservação do solo, proteção de nascentes e reflorestamento de áreas nativas garantindo a biodiversidade.</p>
                 </div>
-                <div class="pilar-box">
-                    <i class="fa-solid fa-solar-panel"></i>
+                <div class="card">
                     <h3>Tecnologia Verde</h3>
-                    <p>Uso de bioinsumos e fontes de energia renovável, como a solar e a biomassa, no dia a dia das fazendas do futuro.</p>
+                    <p>Adoção de bioinsumos, energia solar nas fazendas e rotação de culturas para reduzir a pegada de carbono do setor agropecuário.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="sobre" id="sobre">
-        <div class="interface">
-            <div class="flex-sobre">
-                <div class="img-sobre">
-                    <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&q=80&w=600" alt="Tecnologia no Campo">
-                </div>
-                <div class="txt-sobre">
-                    <h2>Alimentar o mundo <span>protegendo o planeta.</span></h2>
-                    <p>O grande desafio do século XXI é garantir a segurança alimentar de uma população em crescimento sem esgotar nossos recursos naturais. O agro forte de hoje entende que a sustentabilidade não é um obstáculo, mas sim a única garantia de continuidade do negócio.</p>
-                    <p>Através da agricultura de precisão, drones e monitoramento via satélite, conseguimos aplicar o insumo certo, na quantidade certa e no lugar certo, reduzindo drasticamente o impacto ambiental.</p>
-                </div>
-            </div>
+        <div class="cta-section">
+            <h2>Quer saber como implementar essas práticas?</h2>
+            <p>Baixe nosso guia gratuito sobre técnicas de manejo sustentável para o produtor rural.</p>
+            <a href="#" class="btn">Acessar o Guia</a>
         </div>
-    </section>
-
-    <section class="contato" id="contato">
-        <div class="interface">
-            <h2 class="titulo">Una-se ao <span>Movimento.</span></h2>
-            <form id="form-contato">
-                <input type="text" placeholder="Seu Nome Completo" required>
-                <input type="email" placeholder="Seu E-mail" required>
-                <textarea placeholder="Sua Mensagem ou Ideia para o Futuro" required></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+    </div>
 
     <footer>
-        <div class="interface">
-            <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
-        </div>
+        <p>&copy; 2026 Agro Forte & Sustentável. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
