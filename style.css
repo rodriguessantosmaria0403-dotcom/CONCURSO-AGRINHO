@@ -27,10 +27,10 @@ body {
 }
 
 /* ====================================
-   3. TOPO (HEADER) COM FOTO DE AGRICULTURA
+   3. TOPO (HEADER) COM FOTO DE COLHEITA TRADICIONAL
    ==================================== */
 header {
-    /* Gradiente escuro sobreposto para garantir a leitura do texto + link da foto */
+    /* Gradiente escuro sobreposto + Imagem de colheita tradicional no campo */
     background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
                 url('https://unsplash.com') no-repeat center center/cover;
     color: var(--white);
